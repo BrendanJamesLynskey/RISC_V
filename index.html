@@ -11,17 +11,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --amber:  #f5a623;
-    --green:  #4ecb8d;
-    --purple: #a78bfa;
-    --blue:   #60a5fa;
-    --red:    #f87171;
-    --bg:     #0a0a0f;
-    --bg2:    #10101a;
-    --bg3:    #181824;
-    --border: #2a2a3a;
-    --text:   #e8e8f0;
-    --muted:  #8888a8;
+    --amber:  #f4c44d;
+    --green:  #87d5bb;
+    --purple: #c7b9fe;
+    --blue:   #a5dcfe;
+    --red:    #fd8c79;
+    --bg:     #10294a;
+    --bg2:    #143154;
+    --bg3:    #18375d;
+    --border: #305782;
+    --text:   #ecf1f7;
+    --muted:  #8eaac7;
   }
 
   .reveal-viewport { background: var(--bg); }
@@ -40,7 +40,7 @@
 
   .reveal { font-family: 'DM Sans', sans-serif; color: var(--text); font-size: 22px; }
   .reveal .slide-number { font-family: 'JetBrains Mono', monospace; font-size: 0.7em; color: var(--muted); }
-  .reveal h1, .reveal h2, .reveal h3 { font-family: 'Playfair Display', serif; color: #fff; text-transform: none; letter-spacing: -0.01em; }
+  .reveal h1, .reveal h2, .reveal h3 { font-family: 'Playfair Display', serif; color: #ffffff; text-transform: none; letter-spacing: -0.01em; }
   .reveal h1 { font-size: 2.4em; font-weight: 900; color: var(--amber); line-height: 1.1; }
   .reveal h2 { font-size: 1.7em; font-weight: 700; color: var(--amber); margin-bottom: 0.6em; }
   .reveal h3 { font-size: 1.2em; font-weight: 700; color: var(--green); margin-bottom: 0.3em; }
@@ -49,7 +49,7 @@
   .reveal code { font-family: 'JetBrains Mono', monospace; font-size: .72em; }
   .reveal pre  { box-shadow: none; background: var(--bg3); border: 1px solid var(--border);
                  border-radius: 8px; padding: 0.5em 1em; margin: 0.4em 0; width: 100%; }
-  .reveal pre code { font-size: 0.58em; line-height: 1.5; background: transparent; color: #cdd6f4; }
+  .reveal pre code { font-size: 0.58em; line-height: 1.5; background: transparent; color: #dbe5ef; }
 
   .slide-hdr {
     display: flex; align-items: center; gap: .4em;
@@ -76,7 +76,7 @@
   .card {
     background: var(--bg2); border: 1px solid var(--border);
     border-radius: 8px; padding: 1em 1.2em;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3); margin: 0.4em 0;
+    box-shadow: 0 4px 20px rgba(10,31,58,0.3); margin: 0.4em 0;
   }
   .card.amber { border-left: 3px solid var(--amber); }
   .card.green { border-left: 3px solid var(--green); }
@@ -84,15 +84,15 @@
   .card.blue  { border-left: 3px solid var(--blue); }
   .card.red   { border-left: 3px solid var(--red); }
   .card h3 { font-size: 1em; margin: 0 0 0.4em; }
-  .card p, .card ul  { font-size: 0.8em; margin: 0; color: #b8b8d0; }
+  .card p, .card ul  { font-size: 0.8em; margin: 0; color: #bfd1e2; }
   .card ul { margin: 0; padding-left: 1.2em; }
-  .card li { font-size: 0.85em; color: #b8b8d0; margin-bottom: 0.25em; }
+  .card li { font-size: 0.85em; color: #bfd1e2; margin-bottom: 0.25em; }
 
   .reveal table { width: 100%; border-collapse: collapse; font-size: 0.65em; margin: 0.5em 0; }
   .reveal table th { background: var(--bg3); color: var(--amber);
                      padding: 0.5em 0.7em; border: 1px solid var(--border); text-align: left; font-weight: 700; }
-  .reveal table td { padding: 0.5em 0.7em; border: 1px solid var(--border); color: #ccc; vertical-align: top; }
-  .reveal table tr:nth-child(even) td { background: #0e0e18; }
+  .reveal table td { padding: 0.5em 0.7em; border: 1px solid var(--border); color: #d0ddea; vertical-align: top; }
+  .reveal table tr:nth-child(even) td { background: #132f51; }
 
   .a  { color: var(--amber); font-weight: 600; }
   .g  { color: var(--green); font-weight: 600; }
@@ -135,15 +135,15 @@
     padding: 0.4em 1.2em; border-radius: 4px; font-family: 'JetBrains Mono', monospace;
     font-size: 0.75em; font-weight: 700; cursor: pointer; margin-right: 0.4em;
   }
-  .step-btn:hover { background: #ffc25a; }
+  .step-btn:hover { background: #fcd875; }
   .step-btn.g { background: var(--green); }
-  .step-btn.g:hover { background: #6eecab; }
-  .step-btn.r { background: var(--red); color:#fff; }
+  .step-btn.g:hover { background: #9eefd4; }
+  .step-btn.r { background: var(--red); color:#ffffff; }
 
   .hex-output {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.9em; color: var(--amber);
-    background: #000; padding: 0.4em 0.7em; border-radius: 4px;
+    background: #0a1f3a; padding: 0.4em 0.7em; border-radius: 4px;
     border: 1px solid var(--border); margin: 0.2em 0;
   }
   .asm-output { font-family: 'JetBrains Mono', monospace; font-size: 0.75em; color: var(--green); }
@@ -152,7 +152,7 @@
     font-family: 'JetBrains Mono', monospace; font-size: 0.55em;
   }
   .reg-cell { background: var(--bg3); padding: 0.2em 0.4em; border-radius: 3px; border: 1px solid var(--border); }
-  .reg-cell.changed { background: rgba(245,166,35,0.2); border-color: var(--amber); color: var(--amber); }
+  .reg-cell.changed { background: rgba(244,196,77,0.2); border-color: var(--amber); color: var(--amber); }
   .reg-name { color: var(--muted); }
 </style>
 </head>
@@ -223,41 +223,41 @@
     <div>
       <svg class="diagram" viewBox="0 0 520 280" width="520" height="280">
         <!-- Axes: openness (x) vs ecosystem (y) -->
-        <line x1="50" y1="240" x2="490" y2="240" stroke="#2a2a3a" stroke-width="1.2"/>
-        <line x1="50" y1="240" x2="50" y2="20" stroke="#2a2a3a" stroke-width="1.2"/>
-        <text x="270" y="265" text-anchor="middle" fill="#8888a8" font-size="11" font-family="JetBrains Mono">Openness / licensing freedom →</text>
-        <text x="20" y="130" fill="#8888a8" font-size="11" font-family="JetBrains Mono" transform="rotate(-90 20,130)">Ecosystem maturity →</text>
+        <line x1="50" y1="240" x2="490" y2="240" stroke="#305782" stroke-width="1.2"/>
+        <line x1="50" y1="240" x2="50" y2="20" stroke="#305782" stroke-width="1.2"/>
+        <text x="270" y="265" text-anchor="middle" fill="#8eaac7" font-size="11" font-family="JetBrains Mono">Openness / licensing freedom →</text>
+        <text x="20" y="130" fill="#8eaac7" font-size="11" font-family="JetBrains Mono" transform="rotate(-90 20,130)">Ecosystem maturity →</text>
 
         <!-- x86 -->
-        <circle cx="110" cy="60" r="32" fill="#f87171" fill-opacity="0.15" stroke="#f87171" stroke-width="1.4"/>
-        <text x="110" y="58" text-anchor="middle" fill="#f87171" font-size="12" font-family="JetBrains Mono" font-weight="700">x86/x64</text>
-        <text x="110" y="72" text-anchor="middle" fill="#8888a8" font-size="8">Intel · AMD</text>
-        <text x="110" y="82" text-anchor="middle" fill="#8888a8" font-size="7">closed · patent-encumbered</text>
+        <circle cx="110" cy="60" r="32" fill="#fd8c79" fill-opacity="0.15" stroke="#fd8c79" stroke-width="1.4"/>
+        <text x="110" y="58" text-anchor="middle" fill="#fd8c79" font-size="12" font-family="JetBrains Mono" font-weight="700">x86/x64</text>
+        <text x="110" y="72" text-anchor="middle" fill="#8eaac7" font-size="8">Intel · AMD</text>
+        <text x="110" y="82" text-anchor="middle" fill="#8eaac7" font-size="7">closed · patent-encumbered</text>
 
         <!-- Arm -->
-        <circle cx="230" cy="90" r="34" fill="#f5a623" fill-opacity="0.15" stroke="#f5a623" stroke-width="1.4"/>
-        <text x="230" y="88" text-anchor="middle" fill="#f5a623" font-size="12" font-family="JetBrains Mono" font-weight="700">Arm</text>
-        <text x="230" y="102" text-anchor="middle" fill="#8888a8" font-size="8">licensable · royalties</text>
+        <circle cx="230" cy="90" r="34" fill="#f4c44d" fill-opacity="0.15" stroke="#f4c44d" stroke-width="1.4"/>
+        <text x="230" y="88" text-anchor="middle" fill="#f4c44d" font-size="12" font-family="JetBrains Mono" font-weight="700">Arm</text>
+        <text x="230" y="102" text-anchor="middle" fill="#8eaac7" font-size="8">licensable · royalties</text>
 
         <!-- MIPS (legacy) -->
-        <circle cx="180" cy="180" r="24" fill="#a78bfa" fill-opacity="0.12" stroke="#a78bfa" stroke-width="1.2"/>
-        <text x="180" y="178" text-anchor="middle" fill="#a78bfa" font-size="11" font-family="JetBrains Mono" font-weight="700">MIPS</text>
-        <text x="180" y="192" text-anchor="middle" fill="#8888a8" font-size="7">legacy → RISC-V (2021)</text>
+        <circle cx="180" cy="180" r="24" fill="#c7b9fe" fill-opacity="0.12" stroke="#c7b9fe" stroke-width="1.2"/>
+        <text x="180" y="178" text-anchor="middle" fill="#c7b9fe" font-size="11" font-family="JetBrains Mono" font-weight="700">MIPS</text>
+        <text x="180" y="192" text-anchor="middle" fill="#8eaac7" font-size="7">legacy → RISC-V (2021)</text>
 
         <!-- OpenPOWER -->
-        <circle cx="340" cy="165" r="26" fill="#60a5fa" fill-opacity="0.12" stroke="#60a5fa" stroke-width="1.2"/>
-        <text x="340" y="163" text-anchor="middle" fill="#60a5fa" font-size="11" font-family="JetBrains Mono" font-weight="700">OpenPOWER</text>
-        <text x="340" y="178" text-anchor="middle" fill="#8888a8" font-size="7">IBM · open 2019</text>
+        <circle cx="340" cy="165" r="26" fill="#a5dcfe" fill-opacity="0.12" stroke="#a5dcfe" stroke-width="1.2"/>
+        <text x="340" y="163" text-anchor="middle" fill="#a5dcfe" font-size="11" font-family="JetBrains Mono" font-weight="700">OpenPOWER</text>
+        <text x="340" y="178" text-anchor="middle" fill="#8eaac7" font-size="7">IBM · open 2019</text>
 
         <!-- RISC-V -->
-        <circle cx="430" cy="115" r="40" fill="#4ecb8d" fill-opacity="0.18" stroke="#4ecb8d" stroke-width="1.8"/>
-        <text x="430" y="113" text-anchor="middle" fill="#4ecb8d" font-size="14" font-family="JetBrains Mono" font-weight="700">RISC-V</text>
-        <text x="430" y="128" text-anchor="middle" fill="#8888a8" font-size="8">BSD-licensed spec</text>
-        <text x="430" y="140" text-anchor="middle" fill="#8888a8" font-size="7">zero royalties</text>
+        <circle cx="430" cy="115" r="40" fill="#87d5bb" fill-opacity="0.18" stroke="#87d5bb" stroke-width="1.8"/>
+        <text x="430" y="113" text-anchor="middle" fill="#87d5bb" font-size="14" font-family="JetBrains Mono" font-weight="700">RISC-V</text>
+        <text x="430" y="128" text-anchor="middle" fill="#8eaac7" font-size="8">BSD-licensed spec</text>
+        <text x="430" y="140" text-anchor="middle" fill="#8eaac7" font-size="7">zero royalties</text>
 
         <!-- SPARC (faded) -->
-        <circle cx="330" cy="200" r="16" fill="#8888a8" fill-opacity="0.08" stroke="#666680" stroke-width="0.8" stroke-dasharray="3,2"/>
-        <text x="330" y="203" text-anchor="middle" fill="#666680" font-size="9" font-family="JetBrains Mono">SPARC</text>
+        <circle cx="330" cy="200" r="16" fill="#8eaac7" fill-opacity="0.08" stroke="#587ca2" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <text x="330" y="203" text-anchor="middle" fill="#587ca2" font-size="9" font-family="JetBrains Mono">SPARC</text>
       </svg>
     </div>
     <div>
@@ -290,111 +290,111 @@
   <div class="slide-hdr"><span class="tag">02</span><h2>A 15-Year Timeline</h2></div>
   <svg class="diagram" viewBox="0 0 1050 360" width="1050" height="360">
     <!-- Main axis -->
-    <line x1="30" y1="180" x2="1020" y2="180" stroke="#2a2a3a" stroke-width="2"/>
+    <line x1="30" y1="180" x2="1020" y2="180" stroke="#305782" stroke-width="2"/>
     <defs>
       <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-        <path d="M0,0 L10,5 L0,10 z" fill="#2a2a3a"/>
+        <path d="M0,0 L10,5 L0,10 z" fill="#305782"/>
       </marker>
     </defs>
-    <line x1="1020" y1="180" x2="1035" y2="180" stroke="#2a2a3a" stroke-width="2" marker-end="url(#arr)"/>
+    <line x1="1020" y1="180" x2="1035" y2="180" stroke="#305782" stroke-width="2" marker-end="url(#arr)"/>
 
     <!-- Year ticks -->
-    <g font-family="JetBrains Mono" font-size="10" fill="#8888a8">
-      <g><line x1="60"  y1="175" x2="60"  y2="185" stroke="#8888a8"/><text x="60"  y="205" text-anchor="middle">2010</text></g>
-      <g><line x1="180" y1="175" x2="180" y2="185" stroke="#8888a8"/><text x="180" y="205" text-anchor="middle">2014</text></g>
-      <g><line x1="300" y1="175" x2="300" y2="185" stroke="#8888a8"/><text x="300" y="205" text-anchor="middle">2015</text></g>
-      <g><line x1="420" y1="175" x2="420" y2="185" stroke="#8888a8"/><text x="420" y="205" text-anchor="middle">2017</text></g>
-      <g><line x1="540" y1="175" x2="540" y2="185" stroke="#8888a8"/><text x="540" y="205" text-anchor="middle">2019</text></g>
-      <g><line x1="660" y1="175" x2="660" y2="185" stroke="#8888a8"/><text x="660" y="205" text-anchor="middle">2021</text></g>
-      <g><line x1="780" y1="175" x2="780" y2="185" stroke="#8888a8"/><text x="780" y="205" text-anchor="middle">2023</text></g>
-      <g><line x1="900" y1="175" x2="900" y2="185" stroke="#8888a8"/><text x="900" y="205" text-anchor="middle">2025</text></g>
-      <g><line x1="1000" y1="175" x2="1000" y2="185" stroke="#8888a8"/><text x="1000" y="205" text-anchor="middle">2026</text></g>
+    <g font-family="JetBrains Mono" font-size="10" fill="#8eaac7">
+      <g><line x1="60"  y1="175" x2="60"  y2="185" stroke="#8eaac7"/><text x="60"  y="205" text-anchor="middle">2010</text></g>
+      <g><line x1="180" y1="175" x2="180" y2="185" stroke="#8eaac7"/><text x="180" y="205" text-anchor="middle">2014</text></g>
+      <g><line x1="300" y1="175" x2="300" y2="185" stroke="#8eaac7"/><text x="300" y="205" text-anchor="middle">2015</text></g>
+      <g><line x1="420" y1="175" x2="420" y2="185" stroke="#8eaac7"/><text x="420" y="205" text-anchor="middle">2017</text></g>
+      <g><line x1="540" y1="175" x2="540" y2="185" stroke="#8eaac7"/><text x="540" y="205" text-anchor="middle">2019</text></g>
+      <g><line x1="660" y1="175" x2="660" y2="185" stroke="#8eaac7"/><text x="660" y="205" text-anchor="middle">2021</text></g>
+      <g><line x1="780" y1="175" x2="780" y2="185" stroke="#8eaac7"/><text x="780" y="205" text-anchor="middle">2023</text></g>
+      <g><line x1="900" y1="175" x2="900" y2="185" stroke="#8eaac7"/><text x="900" y="205" text-anchor="middle">2025</text></g>
+      <g><line x1="1000" y1="175" x2="1000" y2="185" stroke="#8eaac7"/><text x="1000" y="205" text-anchor="middle">2026</text></g>
     </g>
 
     <!-- Events above -->
-    <g font-family="DM Sans" font-size="10" fill="#e8e8f0">
-      <line x1="60" y1="170" x2="60" y2="120" stroke="#f5a623"/>
-      <circle cx="60" cy="120" r="5" fill="#f5a623"/>
-      <text x="60" y="105" text-anchor="middle" fill="#f5a623" font-weight="700">ISA project begins</text>
-      <text x="60" y="92"  text-anchor="middle" fill="#8888a8" font-size="9">UC Berkeley</text>
-      <text x="60" y="80"  text-anchor="middle" fill="#8888a8" font-size="9">Par Lab / ASPIRE</text>
+    <g font-family="DM Sans" font-size="10" fill="#ecf1f7">
+      <line x1="60" y1="170" x2="60" y2="120" stroke="#f4c44d"/>
+      <circle cx="60" cy="120" r="5" fill="#f4c44d"/>
+      <text x="60" y="105" text-anchor="middle" fill="#f4c44d" font-weight="700">ISA project begins</text>
+      <text x="60" y="92"  text-anchor="middle" fill="#8eaac7" font-size="9">UC Berkeley</text>
+      <text x="60" y="80"  text-anchor="middle" fill="#8eaac7" font-size="9">Par Lab / ASPIRE</text>
 
-      <line x1="180" y1="170" x2="180" y2="70" stroke="#4ecb8d"/>
-      <circle cx="180" cy="70" r="5" fill="#4ecb8d"/>
-      <text x="180" y="55" text-anchor="middle" fill="#4ecb8d" font-weight="700">Frozen RV32I/64I</text>
-      <text x="180" y="42" text-anchor="middle" fill="#8888a8" font-size="9">User ISA v2.0</text>
+      <line x1="180" y1="170" x2="180" y2="70" stroke="#87d5bb"/>
+      <circle cx="180" cy="70" r="5" fill="#87d5bb"/>
+      <text x="180" y="55" text-anchor="middle" fill="#87d5bb" font-weight="700">Frozen RV32I/64I</text>
+      <text x="180" y="42" text-anchor="middle" fill="#8eaac7" font-size="9">User ISA v2.0</text>
 
-      <line x1="300" y1="170" x2="300" y2="120" stroke="#a78bfa"/>
-      <circle cx="300" cy="120" r="5" fill="#a78bfa"/>
-      <text x="300" y="108" text-anchor="middle" fill="#a78bfa" font-weight="700">Foundation founded</text>
-      <text x="300" y="95" text-anchor="middle" fill="#8888a8" font-size="9">25 founding members</text>
+      <line x1="300" y1="170" x2="300" y2="120" stroke="#c7b9fe"/>
+      <circle cx="300" cy="120" r="5" fill="#c7b9fe"/>
+      <text x="300" y="108" text-anchor="middle" fill="#c7b9fe" font-weight="700">Foundation founded</text>
+      <text x="300" y="95" text-anchor="middle" fill="#8eaac7" font-size="9">25 founding members</text>
 
-      <line x1="420" y1="170" x2="420" y2="70" stroke="#60a5fa"/>
-      <circle cx="420" cy="70" r="5" fill="#60a5fa"/>
-      <text x="420" y="55" text-anchor="middle" fill="#60a5fa" font-weight="700">Priv. spec ratified</text>
-      <text x="420" y="42" text-anchor="middle" fill="#8888a8" font-size="9">M/S/U modes</text>
+      <line x1="420" y1="170" x2="420" y2="70" stroke="#a5dcfe"/>
+      <circle cx="420" cy="70" r="5" fill="#a5dcfe"/>
+      <text x="420" y="55" text-anchor="middle" fill="#a5dcfe" font-weight="700">Priv. spec ratified</text>
+      <text x="420" y="42" text-anchor="middle" fill="#8eaac7" font-size="9">M/S/U modes</text>
 
-      <line x1="540" y1="170" x2="540" y2="130" stroke="#f87171"/>
-      <circle cx="540" cy="130" r="5" fill="#f87171"/>
-      <text x="540" y="118" text-anchor="middle" fill="#f87171" font-weight="700">Move to Switzerland</text>
-      <text x="540" y="105" text-anchor="middle" fill="#8888a8" font-size="9">geopolitics-neutral</text>
+      <line x1="540" y1="170" x2="540" y2="130" stroke="#fd8c79"/>
+      <circle cx="540" cy="130" r="5" fill="#fd8c79"/>
+      <text x="540" y="118" text-anchor="middle" fill="#fd8c79" font-weight="700">Move to Switzerland</text>
+      <text x="540" y="105" text-anchor="middle" fill="#8eaac7" font-size="9">geopolitics-neutral</text>
 
-      <line x1="660" y1="170" x2="660" y2="60" stroke="#f5a623"/>
-      <circle cx="660" cy="60" r="5" fill="#f5a623"/>
-      <text x="660" y="45" text-anchor="middle" fill="#f5a623" font-weight="700">Vector (V) &amp; Hyp (H)</text>
-      <text x="660" y="32" text-anchor="middle" fill="#8888a8" font-size="9">RVV 1.0 ratified</text>
+      <line x1="660" y1="170" x2="660" y2="60" stroke="#f4c44d"/>
+      <circle cx="660" cy="60" r="5" fill="#f4c44d"/>
+      <text x="660" y="45" text-anchor="middle" fill="#f4c44d" font-weight="700">Vector (V) &amp; Hyp (H)</text>
+      <text x="660" y="32" text-anchor="middle" fill="#8eaac7" font-size="9">RVV 1.0 ratified</text>
 
-      <line x1="780" y1="170" x2="780" y2="110" stroke="#4ecb8d"/>
-      <circle cx="780" cy="110" r="5" fill="#4ecb8d"/>
-      <text x="780" y="95" text-anchor="middle" fill="#4ecb8d" font-weight="700">RVA23 profile</text>
-      <text x="780" y="82" text-anchor="middle" fill="#8888a8" font-size="9">App-class baseline</text>
+      <line x1="780" y1="170" x2="780" y2="110" stroke="#87d5bb"/>
+      <circle cx="780" cy="110" r="5" fill="#87d5bb"/>
+      <text x="780" y="95" text-anchor="middle" fill="#87d5bb" font-weight="700">RVA23 profile</text>
+      <text x="780" y="82" text-anchor="middle" fill="#8eaac7" font-size="9">App-class baseline</text>
     </g>
 
     <!-- Events below -->
-    <g font-family="DM Sans" font-size="10" fill="#e8e8f0">
-      <line x1="120" y1="185" x2="120" y2="240" stroke="#60a5fa"/>
-      <circle cx="120" cy="240" r="5" fill="#60a5fa"/>
-      <text x="120" y="258" text-anchor="middle" fill="#60a5fa" font-weight="700">Rocket Chip</text>
-      <text x="120" y="270" text-anchor="middle" fill="#8888a8" font-size="9">Chisel-generated</text>
-      <text x="120" y="282" text-anchor="middle" fill="#8888a8" font-size="9">first silicon tapeout</text>
+    <g font-family="DM Sans" font-size="10" fill="#ecf1f7">
+      <line x1="120" y1="185" x2="120" y2="240" stroke="#a5dcfe"/>
+      <circle cx="120" cy="240" r="5" fill="#a5dcfe"/>
+      <text x="120" y="258" text-anchor="middle" fill="#a5dcfe" font-weight="700">Rocket Chip</text>
+      <text x="120" y="270" text-anchor="middle" fill="#8eaac7" font-size="9">Chisel-generated</text>
+      <text x="120" y="282" text-anchor="middle" fill="#8eaac7" font-size="9">first silicon tapeout</text>
 
-      <line x1="240" y1="185" x2="240" y2="240" stroke="#f5a623"/>
-      <circle cx="240" cy="240" r="5" fill="#f5a623"/>
-      <text x="240" y="258" text-anchor="middle" fill="#f5a623" font-weight="700">SiFive founded</text>
-      <text x="240" y="270" text-anchor="middle" fill="#8888a8" font-size="9">first commercial IP</text>
+      <line x1="240" y1="185" x2="240" y2="240" stroke="#f4c44d"/>
+      <circle cx="240" cy="240" r="5" fill="#f4c44d"/>
+      <text x="240" y="258" text-anchor="middle" fill="#f4c44d" font-weight="700">SiFive founded</text>
+      <text x="240" y="270" text-anchor="middle" fill="#8eaac7" font-size="9">first commercial IP</text>
 
-      <line x1="360" y1="185" x2="360" y2="250" stroke="#a78bfa"/>
-      <circle cx="360" cy="250" r="5" fill="#a78bfa"/>
-      <text x="360" y="268" text-anchor="middle" fill="#a78bfa" font-weight="700">HiFive1 ships</text>
-      <text x="360" y="280" text-anchor="middle" fill="#8888a8" font-size="9">Arduino-compatible</text>
+      <line x1="360" y1="185" x2="360" y2="250" stroke="#c7b9fe"/>
+      <circle cx="360" cy="250" r="5" fill="#c7b9fe"/>
+      <text x="360" y="268" text-anchor="middle" fill="#c7b9fe" font-weight="700">HiFive1 ships</text>
+      <text x="360" y="280" text-anchor="middle" fill="#8eaac7" font-size="9">Arduino-compatible</text>
 
-      <line x1="480" y1="185" x2="480" y2="240" stroke="#4ecb8d"/>
-      <circle cx="480" cy="240" r="5" fill="#4ecb8d"/>
-      <text x="480" y="258" text-anchor="middle" fill="#4ecb8d" font-weight="700">Linux upstream</text>
-      <text x="480" y="270" text-anchor="middle" fill="#8888a8" font-size="9">kernel 4.15 (2018)</text>
+      <line x1="480" y1="185" x2="480" y2="240" stroke="#87d5bb"/>
+      <circle cx="480" cy="240" r="5" fill="#87d5bb"/>
+      <text x="480" y="258" text-anchor="middle" fill="#87d5bb" font-weight="700">Linux upstream</text>
+      <text x="480" y="270" text-anchor="middle" fill="#8eaac7" font-size="9">kernel 4.15 (2018)</text>
 
-      <line x1="600" y1="185" x2="600" y2="250" stroke="#f87171"/>
-      <circle cx="600" cy="250" r="5" fill="#f87171"/>
-      <text x="600" y="268" text-anchor="middle" fill="#f87171" font-weight="700">Alibaba XuanTie</text>
-      <text x="600" y="280" text-anchor="middle" fill="#8888a8" font-size="9">C910 2.5 GHz OoO</text>
+      <line x1="600" y1="185" x2="600" y2="250" stroke="#fd8c79"/>
+      <circle cx="600" cy="250" r="5" fill="#fd8c79"/>
+      <text x="600" y="268" text-anchor="middle" fill="#fd8c79" font-weight="700">Alibaba XuanTie</text>
+      <text x="600" y="280" text-anchor="middle" fill="#8eaac7" font-size="9">C910 2.5 GHz OoO</text>
 
-      <line x1="720" y1="185" x2="720" y2="240" stroke="#60a5fa"/>
-      <circle cx="720" cy="240" r="5" fill="#60a5fa"/>
-      <text x="720" y="258" text-anchor="middle" fill="#60a5fa" font-weight="700">&gt;10 B cores</text>
-      <text x="720" y="270" text-anchor="middle" fill="#8888a8" font-size="9">shipped cumulatively</text>
+      <line x1="720" y1="185" x2="720" y2="240" stroke="#a5dcfe"/>
+      <circle cx="720" cy="240" r="5" fill="#a5dcfe"/>
+      <text x="720" y="258" text-anchor="middle" fill="#a5dcfe" font-weight="700">&gt;10 B cores</text>
+      <text x="720" y="270" text-anchor="middle" fill="#8eaac7" font-size="9">shipped cumulatively</text>
 
-      <line x1="840" y1="185" x2="840" y2="250" stroke="#f5a623"/>
-      <circle cx="840" cy="250" r="5" fill="#f5a623"/>
-      <text x="840" y="268" text-anchor="middle" fill="#f5a623" font-weight="700">Ventana Veyron V2</text>
-      <text x="840" y="280" text-anchor="middle" fill="#8888a8" font-size="9">3.6 GHz server-class</text>
+      <line x1="840" y1="185" x2="840" y2="250" stroke="#f4c44d"/>
+      <circle cx="840" cy="250" r="5" fill="#f4c44d"/>
+      <text x="840" y="268" text-anchor="middle" fill="#f4c44d" font-weight="700">Ventana Veyron V2</text>
+      <text x="840" y="280" text-anchor="middle" fill="#8eaac7" font-size="9">3.6 GHz server-class</text>
 
-      <line x1="960" y1="185" x2="960" y2="240" stroke="#4ecb8d"/>
-      <circle cx="960" cy="240" r="5" fill="#4ecb8d"/>
-      <text x="960" y="258" text-anchor="middle" fill="#4ecb8d" font-weight="700">Ubuntu / RHEL</text>
-      <text x="960" y="270" text-anchor="middle" fill="#8888a8" font-size="9">full RVA23 support</text>
+      <line x1="960" y1="185" x2="960" y2="240" stroke="#87d5bb"/>
+      <circle cx="960" cy="240" r="5" fill="#87d5bb"/>
+      <text x="960" y="258" text-anchor="middle" fill="#87d5bb" font-weight="700">Ubuntu / RHEL</text>
+      <text x="960" y="270" text-anchor="middle" fill="#8eaac7" font-size="9">full RVA23 support</text>
     </g>
 
-    <text x="525" y="340" text-anchor="middle" fill="#8888a8" font-size="11" font-family="DM Sans" font-style="italic">
+    <text x="525" y="340" text-anchor="middle" fill="#8eaac7" font-size="11" font-family="DM Sans" font-style="italic">
       From a 2010 summer research project to a multi-architecture platform in ~15 years
     </text>
   </svg>
@@ -556,44 +556,44 @@
     <div>
       <svg class="diagram" viewBox="0 0 600 300" width="600" height="300">
         <!-- Base -->
-        <rect x="20" y="130" width="140" height="40" rx="6" fill="#1a1a2e" stroke="#4ecb8d" stroke-width="1.6"/>
-        <text x="90" y="148" text-anchor="middle" fill="#4ecb8d" font-size="12" font-family="JetBrains Mono" font-weight="700">RV64I</text>
-        <text x="90" y="163" text-anchor="middle" fill="#8888a8" font-size="9">frozen base</text>
+        <rect x="20" y="130" width="140" height="40" rx="6" fill="#1c3d64" stroke="#87d5bb" stroke-width="1.6"/>
+        <text x="90" y="148" text-anchor="middle" fill="#87d5bb" font-size="12" font-family="JetBrains Mono" font-weight="700">RV64I</text>
+        <text x="90" y="163" text-anchor="middle" fill="#8eaac7" font-size="9">frozen base</text>
 
         <!-- G = IMAFD + Zicsr/Zifencei -->
-        <rect x="190" y="110" width="120" height="80" rx="6" fill="#1a1a2e" stroke="#f5a623" stroke-width="1.6"/>
-        <text x="250" y="130" text-anchor="middle" fill="#f5a623" font-size="13" font-family="JetBrains Mono" font-weight="700">G</text>
-        <text x="250" y="148" text-anchor="middle" fill="#e8e8f0" font-size="9" font-family="JetBrains Mono">I + M + A + F + D</text>
-        <text x="250" y="162" text-anchor="middle" fill="#8888a8" font-size="8">+ Zicsr + Zifencei</text>
-        <text x="250" y="178" text-anchor="middle" fill="#8888a8" font-size="8">"general-purpose"</text>
+        <rect x="190" y="110" width="120" height="80" rx="6" fill="#1c3d64" stroke="#f4c44d" stroke-width="1.6"/>
+        <text x="250" y="130" text-anchor="middle" fill="#f4c44d" font-size="13" font-family="JetBrains Mono" font-weight="700">G</text>
+        <text x="250" y="148" text-anchor="middle" fill="#ecf1f7" font-size="9" font-family="JetBrains Mono">I + M + A + F + D</text>
+        <text x="250" y="162" text-anchor="middle" fill="#8eaac7" font-size="8">+ Zicsr + Zifencei</text>
+        <text x="250" y="178" text-anchor="middle" fill="#8eaac7" font-size="8">"general-purpose"</text>
 
-        <line x1="160" y1="150" x2="190" y2="150" stroke="#8888a8" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="160" y1="150" x2="190" y2="150" stroke="#8eaac7" stroke-width="1" marker-end="url(#arr)"/>
 
         <!-- RVA22 -->
-        <rect x="340" y="40" width="220" height="75" rx="6" fill="#1a1a2e" stroke="#a78bfa" stroke-width="1.6"/>
-        <text x="450" y="62" text-anchor="middle" fill="#a78bfa" font-size="13" font-family="JetBrains Mono" font-weight="700">RVA22U64 / RVA22S64</text>
-        <text x="450" y="78" text-anchor="middle" fill="#e8e8f0" font-size="9" font-family="JetBrains Mono">= G + C + B + Zihintpause</text>
-        <text x="450" y="92" text-anchor="middle" fill="#e8e8f0" font-size="9" font-family="JetBrains Mono">+ Zicbom/Zicboz + Svpbmt + Sstc…</text>
-        <text x="450" y="108" text-anchor="middle" fill="#8888a8" font-size="8">first Linux-grade baseline (2022)</text>
+        <rect x="340" y="40" width="220" height="75" rx="6" fill="#1c3d64" stroke="#c7b9fe" stroke-width="1.6"/>
+        <text x="450" y="62" text-anchor="middle" fill="#c7b9fe" font-size="13" font-family="JetBrains Mono" font-weight="700">RVA22U64 / RVA22S64</text>
+        <text x="450" y="78" text-anchor="middle" fill="#ecf1f7" font-size="9" font-family="JetBrains Mono">= G + C + B + Zihintpause</text>
+        <text x="450" y="92" text-anchor="middle" fill="#ecf1f7" font-size="9" font-family="JetBrains Mono">+ Zicbom/Zicboz + Svpbmt + Sstc…</text>
+        <text x="450" y="108" text-anchor="middle" fill="#8eaac7" font-size="8">first Linux-grade baseline (2022)</text>
 
-        <line x1="310" y1="140" x2="340" y2="90" stroke="#8888a8" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="310" y1="140" x2="340" y2="90" stroke="#8eaac7" stroke-width="1" marker-end="url(#arr)"/>
 
         <!-- RVA23 -->
-        <rect x="340" y="130" width="220" height="75" rx="6" fill="#1a1a2e" stroke="#60a5fa" stroke-width="2"/>
-        <text x="450" y="152" text-anchor="middle" fill="#60a5fa" font-size="13" font-family="JetBrains Mono" font-weight="700">RVA23U64 / RVA23S64</text>
-        <text x="450" y="168" text-anchor="middle" fill="#e8e8f0" font-size="9" font-family="JetBrains Mono">= RVA22 + V + Vector Crypto</text>
-        <text x="450" y="182" text-anchor="middle" fill="#e8e8f0" font-size="9" font-family="JetBrains Mono">+ Hypervisor + AIA + more</text>
-        <text x="450" y="196" text-anchor="middle" fill="#8888a8" font-size="8">ratified 2024 — current target</text>
+        <rect x="340" y="130" width="220" height="75" rx="6" fill="#1c3d64" stroke="#a5dcfe" stroke-width="2"/>
+        <text x="450" y="152" text-anchor="middle" fill="#a5dcfe" font-size="13" font-family="JetBrains Mono" font-weight="700">RVA23U64 / RVA23S64</text>
+        <text x="450" y="168" text-anchor="middle" fill="#ecf1f7" font-size="9" font-family="JetBrains Mono">= RVA22 + V + Vector Crypto</text>
+        <text x="450" y="182" text-anchor="middle" fill="#ecf1f7" font-size="9" font-family="JetBrains Mono">+ Hypervisor + AIA + more</text>
+        <text x="450" y="196" text-anchor="middle" fill="#8eaac7" font-size="8">ratified 2024 — current target</text>
 
-        <line x1="310" y1="160" x2="340" y2="165" stroke="#8888a8" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="310" y1="160" x2="340" y2="165" stroke="#8eaac7" stroke-width="1" marker-end="url(#arr)"/>
 
         <!-- RVB23 -->
-        <rect x="340" y="220" width="220" height="65" rx="6" fill="#1a1a2e" stroke="#f87171" stroke-width="1.4"/>
-        <text x="450" y="240" text-anchor="middle" fill="#f87171" font-size="13" font-family="JetBrains Mono" font-weight="700">RVB23 (bespoke)</text>
-        <text x="450" y="255" text-anchor="middle" fill="#e8e8f0" font-size="9" font-family="JetBrains Mono">Subset of RVA23 for MCUs</text>
-        <text x="450" y="270" text-anchor="middle" fill="#8888a8" font-size="8">no V, optional hypervisor</text>
+        <rect x="340" y="220" width="220" height="65" rx="6" fill="#1c3d64" stroke="#fd8c79" stroke-width="1.4"/>
+        <text x="450" y="240" text-anchor="middle" fill="#fd8c79" font-size="13" font-family="JetBrains Mono" font-weight="700">RVB23 (bespoke)</text>
+        <text x="450" y="255" text-anchor="middle" fill="#ecf1f7" font-size="9" font-family="JetBrains Mono">Subset of RVA23 for MCUs</text>
+        <text x="450" y="270" text-anchor="middle" fill="#8eaac7" font-size="8">no V, optional hypervisor</text>
 
-        <line x1="310" y1="180" x2="340" y2="245" stroke="#8888a8" stroke-width="1" marker-end="url(#arr)"/>
+        <line x1="310" y1="180" x2="340" y2="245" stroke="#8eaac7" stroke-width="1" marker-end="url(#arr)"/>
       </svg>
     </div>
     <div>
@@ -676,7 +676,7 @@
   <div class="slide-hdr"><span class="tag">08</span><h2>Instruction Formats — Six Shapes, One Decoder</h2></div>
   <svg class="diagram" viewBox="0 0 1020 340" width="1020" height="340">
     <!-- Bit ruler -->
-    <g font-family="JetBrains Mono" font-size="8" fill="#8888a8">
+    <g font-family="JetBrains Mono" font-size="8" fill="#8eaac7">
       <text x="60"  y="12" text-anchor="middle">31</text>
       <text x="210" y="12" text-anchor="middle">25</text>
       <text x="270" y="12" text-anchor="middle">20</text>
@@ -688,80 +688,80 @@
 
     <!-- R-type -->
     <g transform="translate(0,25)">
-      <rect x="50"  y="0" width="150" height="28" fill="#1a1a2e" stroke="#f5a623"/><text x="125" y="18" text-anchor="middle" fill="#f5a623" font-size="10" font-family="JetBrains Mono">funct7</text>
-      <rect x="200" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="237" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rs2</text>
-      <rect x="275" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="312" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rs1</text>
-      <rect x="350" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#60a5fa"/><text x="387" y="18" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">funct3</text>
-      <rect x="425" y="0" width="195" height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="522" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rd</text>
-      <rect x="620" y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="695" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">opcode</text>
-      <text x="820" y="18" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">R-type</text>
-      <text x="880" y="18" fill="#8888a8" font-size="9">ADD, SUB, AND, OR, SLL, SLT…</text>
+      <rect x="50"  y="0" width="150" height="28" fill="#1c3d64" stroke="#f4c44d"/><text x="125" y="18" text-anchor="middle" fill="#f4c44d" font-size="10" font-family="JetBrains Mono">funct7</text>
+      <rect x="200" y="0" width="75"  height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="237" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rs2</text>
+      <rect x="275" y="0" width="75"  height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="312" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rs1</text>
+      <rect x="350" y="0" width="75"  height="28" fill="#1c3d64" stroke="#a5dcfe"/><text x="387" y="18" text-anchor="middle" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">funct3</text>
+      <rect x="425" y="0" width="195" height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="522" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rd</text>
+      <rect x="620" y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="695" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">opcode</text>
+      <text x="820" y="18" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">R-type</text>
+      <text x="880" y="18" fill="#8eaac7" font-size="9">ADD, SUB, AND, OR, SLL, SLT…</text>
     </g>
 
     <!-- I-type -->
     <g transform="translate(0,65)">
-      <rect x="50"  y="0" width="285" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="192" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[11:0]</text>
-      <rect x="335" y="0" width="90"  height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="380" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rs1</text>
-      <rect x="425" y="0" width="80"  height="28" fill="#1a1a2e" stroke="#60a5fa"/><text x="465" y="18" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">funct3</text>
-      <rect x="505" y="0" width="115" height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="562" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rd</text>
-      <rect x="620" y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="695" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">opcode</text>
-      <text x="820" y="18" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">I-type</text>
-      <text x="880" y="18" fill="#8888a8" font-size="9">ADDI, LW, JALR, CSRRW…</text>
+      <rect x="50"  y="0" width="285" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="192" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[11:0]</text>
+      <rect x="335" y="0" width="90"  height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="380" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rs1</text>
+      <rect x="425" y="0" width="80"  height="28" fill="#1c3d64" stroke="#a5dcfe"/><text x="465" y="18" text-anchor="middle" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">funct3</text>
+      <rect x="505" y="0" width="115" height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="562" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rd</text>
+      <rect x="620" y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="695" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">opcode</text>
+      <text x="820" y="18" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">I-type</text>
+      <text x="880" y="18" fill="#8eaac7" font-size="9">ADDI, LW, JALR, CSRRW…</text>
     </g>
 
     <!-- S-type -->
     <g transform="translate(0,105)">
-      <rect x="50"  y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="125" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[11:5]</text>
-      <rect x="200" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="237" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rs2</text>
-      <rect x="275" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="312" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rs1</text>
-      <rect x="350" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#60a5fa"/><text x="387" y="18" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">funct3</text>
-      <rect x="425" y="0" width="195" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="522" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[4:0]</text>
-      <rect x="620" y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="695" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">opcode</text>
-      <text x="820" y="18" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">S-type</text>
-      <text x="880" y="18" fill="#8888a8" font-size="9">SW, SH, SB</text>
+      <rect x="50"  y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="125" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[11:5]</text>
+      <rect x="200" y="0" width="75"  height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="237" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rs2</text>
+      <rect x="275" y="0" width="75"  height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="312" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rs1</text>
+      <rect x="350" y="0" width="75"  height="28" fill="#1c3d64" stroke="#a5dcfe"/><text x="387" y="18" text-anchor="middle" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">funct3</text>
+      <rect x="425" y="0" width="195" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="522" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[4:0]</text>
+      <rect x="620" y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="695" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">opcode</text>
+      <text x="820" y="18" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">S-type</text>
+      <text x="880" y="18" fill="#8eaac7" font-size="9">SW, SH, SB</text>
     </g>
 
     <!-- B-type -->
     <g transform="translate(0,145)">
-      <rect x="50"  y="0" width="40"  height="28" fill="#1a1a2e" stroke="#f87171"/><text x="70" y="18" text-anchor="middle" fill="#f87171" font-size="9" font-family="JetBrains Mono">im12</text>
-      <rect x="90"  y="0" width="110" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="145" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[10:5]</text>
-      <rect x="200" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="237" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rs2</text>
-      <rect x="275" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="312" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rs1</text>
-      <rect x="350" y="0" width="75"  height="28" fill="#1a1a2e" stroke="#60a5fa"/><text x="387" y="18" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">funct3</text>
-      <rect x="425" y="0" width="155" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="502" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[4:1]</text>
-      <rect x="580" y="0" width="40"  height="28" fill="#1a1a2e" stroke="#f87171"/><text x="600" y="18" text-anchor="middle" fill="#f87171" font-size="9" font-family="JetBrains Mono">im11</text>
-      <rect x="620" y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="695" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">opcode</text>
-      <text x="820" y="18" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">B-type</text>
-      <text x="880" y="18" fill="#8888a8" font-size="9">BEQ, BNE, BLT, BGE…</text>
+      <rect x="50"  y="0" width="40"  height="28" fill="#1c3d64" stroke="#fd8c79"/><text x="70" y="18" text-anchor="middle" fill="#fd8c79" font-size="9" font-family="JetBrains Mono">im12</text>
+      <rect x="90"  y="0" width="110" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="145" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[10:5]</text>
+      <rect x="200" y="0" width="75"  height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="237" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rs2</text>
+      <rect x="275" y="0" width="75"  height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="312" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rs1</text>
+      <rect x="350" y="0" width="75"  height="28" fill="#1c3d64" stroke="#a5dcfe"/><text x="387" y="18" text-anchor="middle" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">funct3</text>
+      <rect x="425" y="0" width="155" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="502" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[4:1]</text>
+      <rect x="580" y="0" width="40"  height="28" fill="#1c3d64" stroke="#fd8c79"/><text x="600" y="18" text-anchor="middle" fill="#fd8c79" font-size="9" font-family="JetBrains Mono">im11</text>
+      <rect x="620" y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="695" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">opcode</text>
+      <text x="820" y="18" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">B-type</text>
+      <text x="880" y="18" fill="#8eaac7" font-size="9">BEQ, BNE, BLT, BGE…</text>
     </g>
 
     <!-- U-type -->
     <g transform="translate(0,185)">
-      <rect x="50"  y="0" width="455" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="277" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[31:12]</text>
-      <rect x="505" y="0" width="115" height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="562" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rd</text>
-      <rect x="620" y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="695" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">opcode</text>
-      <text x="820" y="18" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">U-type</text>
-      <text x="880" y="18" fill="#8888a8" font-size="9">LUI, AUIPC</text>
+      <rect x="50"  y="0" width="455" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="277" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[31:12]</text>
+      <rect x="505" y="0" width="115" height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="562" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rd</text>
+      <rect x="620" y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="695" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">opcode</text>
+      <text x="820" y="18" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">U-type</text>
+      <text x="880" y="18" fill="#8eaac7" font-size="9">LUI, AUIPC</text>
     </g>
 
     <!-- J-type -->
     <g transform="translate(0,225)">
-      <rect x="50"  y="0" width="40"  height="28" fill="#1a1a2e" stroke="#f87171"/><text x="70" y="18" text-anchor="middle" fill="#f87171" font-size="9" font-family="JetBrains Mono">im20</text>
-      <rect x="90"  y="0" width="225" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="202" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[10:1]</text>
-      <rect x="315" y="0" width="40"  height="28" fill="#1a1a2e" stroke="#f87171"/><text x="335" y="18" text-anchor="middle" fill="#f87171" font-size="9" font-family="JetBrains Mono">im11</text>
-      <rect x="355" y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="430" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[19:12]</text>
-      <rect x="505" y="0" width="115" height="28" fill="#1a1a2e" stroke="#4ecb8d"/><text x="562" y="18" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">rd</text>
-      <rect x="620" y="0" width="150" height="28" fill="#1a1a2e" stroke="#a78bfa"/><text x="695" y="18" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">opcode</text>
-      <text x="820" y="18" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">J-type</text>
-      <text x="880" y="18" fill="#8888a8" font-size="9">JAL</text>
+      <rect x="50"  y="0" width="40"  height="28" fill="#1c3d64" stroke="#fd8c79"/><text x="70" y="18" text-anchor="middle" fill="#fd8c79" font-size="9" font-family="JetBrains Mono">im20</text>
+      <rect x="90"  y="0" width="225" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="202" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[10:1]</text>
+      <rect x="315" y="0" width="40"  height="28" fill="#1c3d64" stroke="#fd8c79"/><text x="335" y="18" text-anchor="middle" fill="#fd8c79" font-size="9" font-family="JetBrains Mono">im11</text>
+      <rect x="355" y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="430" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[19:12]</text>
+      <rect x="505" y="0" width="115" height="28" fill="#1c3d64" stroke="#87d5bb"/><text x="562" y="18" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">rd</text>
+      <rect x="620" y="0" width="150" height="28" fill="#1c3d64" stroke="#c7b9fe"/><text x="695" y="18" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">opcode</text>
+      <text x="820" y="18" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">J-type</text>
+      <text x="880" y="18" fill="#8eaac7" font-size="9">JAL</text>
     </g>
 
     <!-- Commentary -->
     <g transform="translate(0,275)">
-      <text x="50" y="14" fill="#4ecb8d" font-size="11" font-family="DM Sans" font-weight="700">Key invariants across all formats:</text>
-      <text x="50" y="32" fill="#b8b8d0" font-size="10" font-family="DM Sans">• <tspan fill="#4ecb8d" font-weight="700">rs1, rs2, rd</tspan> always land in the same bit positions — register read can start before decode completes</text>
-      <text x="50" y="48" fill="#b8b8d0" font-size="10" font-family="DM Sans">• <tspan fill="#a78bfa" font-weight="700">Sign bit (bit 31)</tspan> is the immediate's MSB in I/S/B/U/J formats — one sign-extend mux does them all</text>
-      <text x="50" y="64" fill="#b8b8d0" font-size="10" font-family="DM Sans">• Bit scrambling in B/J formats lets branches/jumps reuse as much of the immediate datapath as possible</text>
+      <text x="50" y="14" fill="#87d5bb" font-size="11" font-family="DM Sans" font-weight="700">Key invariants across all formats:</text>
+      <text x="50" y="32" fill="#bfd1e2" font-size="10" font-family="DM Sans">• <tspan fill="#87d5bb" font-weight="700">rs1, rs2, rd</tspan> always land in the same bit positions — register read can start before decode completes</text>
+      <text x="50" y="48" fill="#bfd1e2" font-size="10" font-family="DM Sans">• <tspan fill="#c7b9fe" font-weight="700">Sign bit (bit 31)</tspan> is the immediate's MSB in I/S/B/U/J formats — one sign-extend mux does them all</text>
+      <text x="50" y="64" fill="#bfd1e2" font-size="10" font-family="DM Sans">• Bit scrambling in B/J formats lets branches/jumps reuse as much of the immediate datapath as possible</text>
     </g>
   </svg>
 </section>
@@ -769,7 +769,7 @@
 <!-- ============================================================ -->
 <!--  SLIDE 11 — INTERACTIVE ENCODER                              -->
 <!-- ============================================================ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#10294a">
   <div style="font-family:'JetBrains Mono',monospace; font-size:.5em; color:var(--muted); margin-bottom:.4em; letter-spacing:.1em;">Interactive Demo · Try me</div>
   <div class="slide-hdr"><span class="tag">09</span><h2>Live Instruction Encoder</h2></div>
   <p style="margin-bottom:0.5em;">Pick an instruction and set its fields — watch the 32-bit encoding and bit-field layout update live.</p>
@@ -882,7 +882,7 @@
         t.setAttribute('x', X0 + (total-i)*bw);
         t.setAttribute('y', 10);
         t.setAttribute('font-size','8'); t.setAttribute('font-family','JetBrains Mono');
-        t.setAttribute('fill','#8888a8'); t.setAttribute('text-anchor','middle');
+        t.setAttribute('fill','#8eaac7'); t.setAttribute('text-anchor','middle');
         t.textContent = i; svg.appendChild(t);
       }
       // Bit boxes
@@ -893,7 +893,7 @@
         const r = document.createElementNS(ns,'rect');
         r.setAttribute('x',x); r.setAttribute('y',18);
         r.setAttribute('width',width); r.setAttribute('height',28);
-        r.setAttribute('fill','#1a1a2e'); r.setAttribute('stroke',f.color); r.setAttribute('stroke-width','1.2');
+        r.setAttribute('fill','#1c3d64'); r.setAttribute('stroke',f.color); r.setAttribute('stroke-width','1.2');
         svg.appendChild(r);
         const t1 = document.createElementNS(ns,'text');
         t1.setAttribute('x', x + width/2); t1.setAttribute('y', 36);
@@ -903,12 +903,12 @@
         const t2 = document.createElementNS(ns,'text');
         t2.setAttribute('x', x + width/2); t2.setAttribute('y', 62);
         t2.setAttribute('text-anchor','middle'); t2.setAttribute('font-size','9');
-        t2.setAttribute('font-family','JetBrains Mono'); t2.setAttribute('fill','#e8e8f0');
+        t2.setAttribute('font-family','JetBrains Mono'); t2.setAttribute('fill','#ecf1f7');
         t2.textContent = f.value; svg.appendChild(t2);
         const t3 = document.createElementNS(ns,'text');
         t3.setAttribute('x', x + width/2); t3.setAttribute('y', 78);
         t3.setAttribute('text-anchor','middle'); t3.setAttribute('font-size','7');
-        t3.setAttribute('font-family','JetBrains Mono'); t3.setAttribute('fill','#8888a8');
+        t3.setAttribute('font-family','JetBrains Mono'); t3.setAttribute('fill','#8eaac7');
         t3.textContent = '['+f.hi+':'+f.lo+']'; svg.appendChild(t3);
       });
     }
@@ -933,7 +933,7 @@
       document.getElementById('immLbl').textContent = imm + (d.type==='U'?' <<12':'');
 
       let word = 0, asm='', fields=[];
-      const OP_COLOR = '#a78bfa', RD_COLOR='#4ecb8d', RS_COLOR='#4ecb8d', F_COLOR='#60a5fa', IMM_COLOR='#f5a623';
+      const OP_COLOR = '#c7b9fe', RD_COLOR='#87d5bb', RS_COLOR='#87d5bb', F_COLOR='#a5dcfe', IMM_COLOR='#f4c44d';
       if(d.type==='R'){
         word = (d.f7<<25) | (rs2<<20) | (rs1<<15) | (d.f3<<12) | (rd<<7) | d.op;
         asm = name + ' ' + ABI[rd] + ', ' + ABI[rs1] + ', ' + ABI[rs2];
@@ -978,13 +978,13 @@
         word = (b12<<31) | (b10_5<<25) | (rs2<<20) | (rs1<<15) | (d.f3<<12) | (b4_1<<8) | (b11<<7) | d.op;
         asm = name + ' ' + ABI[rs1] + ', ' + ABI[rs2] + ', ' + imm;
         fields = [
-          {lo:31,hi:31,label:'im12',     value:b12, color:'#f87171'},
+          {lo:31,hi:31,label:'im12',     value:b12, color:'#fd8c79'},
           {lo:25,hi:30,label:'imm[10:5]',value:b10_5, color:IMM_COLOR},
           {lo:20,hi:24,label:'rs2',      value:'x'+rs2, color:RS_COLOR},
           {lo:15,hi:19,label:'rs1',      value:'x'+rs1, color:RS_COLOR},
           {lo:12,hi:14,label:'funct3',   value:'0x'+d.f3.toString(16), color:F_COLOR},
           {lo:8, hi:11,label:'imm[4:1]', value:b4_1, color:IMM_COLOR},
-          {lo:7, hi:7, label:'im11',     value:b11, color:'#f87171'},
+          {lo:7, hi:7, label:'im11',     value:b11, color:'#fd8c79'},
           {lo:0, hi:6, label:'opcode',   value:'0x'+d.op.toString(16), color:OP_COLOR}
         ];
       } else if(d.type==='U'){
@@ -1002,9 +1002,9 @@
         word = (b20<<31) | (b10_1<<21) | (b11<<20) | (b19_12<<12) | (rd<<7) | d.op;
         asm = name + ' ' + ABI[rd] + ', ' + imm;
         fields = [
-          {lo:31,hi:31,label:'im20',     value:b20, color:'#f87171'},
+          {lo:31,hi:31,label:'im20',     value:b20, color:'#fd8c79'},
           {lo:21,hi:30,label:'imm[10:1]',value:b10_1, color:IMM_COLOR},
-          {lo:20,hi:20,label:'im11',     value:b11, color:'#f87171'},
+          {lo:20,hi:20,label:'im11',     value:b11, color:'#fd8c79'},
           {lo:12,hi:19,label:'imm[19:12]',value:'0x'+b19_12.toString(16), color:IMM_COLOR},
           {lo:7, hi:11,label:'rd',       value:'x'+rd, color:RD_COLOR},
           {lo:0, hi:6, label:'opcode',   value:'0x'+d.op.toString(16), color:OP_COLOR}
@@ -1034,43 +1034,43 @@
     <div>
       <svg class="diagram" viewBox="0 0 520 330" width="520" height="330">
         <!-- Concentric rings -->
-        <circle cx="260" cy="165" r="150" fill="none" stroke="#2a2a3a" stroke-width="1.2"/>
-        <circle cx="260" cy="165" r="110" fill="none" stroke="#2a2a3a" stroke-width="1.2"/>
-        <circle cx="260" cy="165" r="70"  fill="none" stroke="#2a2a3a" stroke-width="1.2"/>
-        <circle cx="260" cy="165" r="30"  fill="none" stroke="#2a2a3a" stroke-width="1.2"/>
+        <circle cx="260" cy="165" r="150" fill="none" stroke="#305782" stroke-width="1.2"/>
+        <circle cx="260" cy="165" r="110" fill="none" stroke="#305782" stroke-width="1.2"/>
+        <circle cx="260" cy="165" r="70"  fill="none" stroke="#305782" stroke-width="1.2"/>
+        <circle cx="260" cy="165" r="30"  fill="none" stroke="#305782" stroke-width="1.2"/>
         <!-- Labels -->
-        <text x="260" y="170" text-anchor="middle" fill="#f5a623" font-size="14" font-family="JetBrains Mono" font-weight="700">M</text>
-        <text x="260" y="185" text-anchor="middle" fill="#8888a8" font-size="8">Machine · 0b11</text>
+        <text x="260" y="170" text-anchor="middle" fill="#f4c44d" font-size="14" font-family="JetBrains Mono" font-weight="700">M</text>
+        <text x="260" y="185" text-anchor="middle" fill="#8eaac7" font-size="8">Machine · 0b11</text>
 
-        <text x="260" y="110" text-anchor="middle" fill="#4ecb8d" font-size="13" font-family="JetBrains Mono" font-weight="700">HS</text>
-        <text x="260" y="122" text-anchor="middle" fill="#8888a8" font-size="8">Hypervisor · 0b01+H</text>
+        <text x="260" y="110" text-anchor="middle" fill="#87d5bb" font-size="13" font-family="JetBrains Mono" font-weight="700">HS</text>
+        <text x="260" y="122" text-anchor="middle" fill="#8eaac7" font-size="8">Hypervisor · 0b01+H</text>
 
-        <text x="260" y="72" text-anchor="middle" fill="#60a5fa" font-size="13" font-family="JetBrains Mono" font-weight="700">S</text>
-        <text x="260" y="84" text-anchor="middle" fill="#8888a8" font-size="8">Supervisor · 0b01</text>
+        <text x="260" y="72" text-anchor="middle" fill="#a5dcfe" font-size="13" font-family="JetBrains Mono" font-weight="700">S</text>
+        <text x="260" y="84" text-anchor="middle" fill="#8eaac7" font-size="8">Supervisor · 0b01</text>
 
-        <text x="260" y="35" text-anchor="middle" fill="#a78bfa" font-size="13" font-family="JetBrains Mono" font-weight="700">U</text>
-        <text x="260" y="47" text-anchor="middle" fill="#8888a8" font-size="8">User · 0b00</text>
+        <text x="260" y="35" text-anchor="middle" fill="#c7b9fe" font-size="13" font-family="JetBrains Mono" font-weight="700">U</text>
+        <text x="260" y="47" text-anchor="middle" fill="#8eaac7" font-size="8">User · 0b00</text>
 
         <!-- VS/VU -->
-        <rect x="400" y="100" width="90" height="28" rx="4" fill="#1a1a2e" stroke="#f87171"/>
-        <text x="445" y="118" text-anchor="middle" fill="#f87171" font-size="11" font-family="JetBrains Mono">VS</text>
-        <rect x="400" y="140" width="90" height="28" rx="4" fill="#1a1a2e" stroke="#f87171"/>
-        <text x="445" y="158" text-anchor="middle" fill="#f87171" font-size="11" font-family="JetBrains Mono">VU</text>
-        <text x="445" y="185" text-anchor="middle" fill="#8888a8" font-size="8">guest modes (H ext.)</text>
+        <rect x="400" y="100" width="90" height="28" rx="4" fill="#1c3d64" stroke="#fd8c79"/>
+        <text x="445" y="118" text-anchor="middle" fill="#fd8c79" font-size="11" font-family="JetBrains Mono">VS</text>
+        <rect x="400" y="140" width="90" height="28" rx="4" fill="#1c3d64" stroke="#fd8c79"/>
+        <text x="445" y="158" text-anchor="middle" fill="#fd8c79" font-size="11" font-family="JetBrains Mono">VU</text>
+        <text x="445" y="185" text-anchor="middle" fill="#8eaac7" font-size="8">guest modes (H ext.)</text>
 
         <!-- Implementations -->
-        <g font-family="JetBrains Mono" font-size="10" fill="#8888a8">
-          <text x="60" y="225" fill="#f5a623">MCU  (embedded):</text>
-          <text x="210" y="225" fill="#e8e8f0">M only</text>
-          <text x="60" y="245" fill="#f5a623">RTOS:</text>
-          <text x="210" y="245" fill="#e8e8f0">M + U</text>
-          <text x="60" y="265" fill="#f5a623">Linux:</text>
-          <text x="210" y="265" fill="#e8e8f0">M + S + U</text>
-          <text x="60" y="285" fill="#f5a623">KVM host:</text>
-          <text x="210" y="285" fill="#e8e8f0">M + HS + VS + VU</text>
+        <g font-family="JetBrains Mono" font-size="10" fill="#8eaac7">
+          <text x="60" y="225" fill="#f4c44d">MCU  (embedded):</text>
+          <text x="210" y="225" fill="#ecf1f7">M only</text>
+          <text x="60" y="245" fill="#f4c44d">RTOS:</text>
+          <text x="210" y="245" fill="#ecf1f7">M + U</text>
+          <text x="60" y="265" fill="#f4c44d">Linux:</text>
+          <text x="210" y="265" fill="#ecf1f7">M + S + U</text>
+          <text x="60" y="285" fill="#f4c44d">KVM host:</text>
+          <text x="210" y="285" fill="#ecf1f7">M + HS + VS + VU</text>
         </g>
 
-        <text x="260" y="320" text-anchor="middle" fill="#8888a8" font-size="10" font-family="DM Sans" font-style="italic">Rings of privilege — any combination is legal</text>
+        <text x="260" y="320" text-anchor="middle" fill="#8eaac7" font-size="10" font-family="DM Sans" font-style="italic">Rings of privilege — any combination is legal</text>
       </svg>
     </div>
     <div>
@@ -1112,57 +1112,57 @@
     <div>
       <svg class="diagram" viewBox="0 0 520 300" width="520" height="300">
         <!-- Sv39 walk -->
-        <text x="260" y="14" text-anchor="middle" fill="#4ecb8d" font-size="12" font-family="JetBrains Mono" font-weight="700">Sv39 — 3-level, 39-bit VA → 56-bit PA</text>
+        <text x="260" y="14" text-anchor="middle" fill="#87d5bb" font-size="12" font-family="JetBrains Mono" font-weight="700">Sv39 — 3-level, 39-bit VA → 56-bit PA</text>
         <!-- VA breakdown -->
-        <rect x="20"  y="30" width="90"  height="30" fill="#1a1a2e" stroke="#f5a623"/><text x="65"  y="50" text-anchor="middle" fill="#f5a623" font-size="10" font-family="JetBrains Mono">VPN[2] (9b)</text>
-        <rect x="110" y="30" width="90"  height="30" fill="#1a1a2e" stroke="#f5a623"/><text x="155" y="50" text-anchor="middle" fill="#f5a623" font-size="10" font-family="JetBrains Mono">VPN[1] (9b)</text>
-        <rect x="200" y="30" width="90"  height="30" fill="#1a1a2e" stroke="#f5a623"/><text x="245" y="50" text-anchor="middle" fill="#f5a623" font-size="10" font-family="JetBrains Mono">VPN[0] (9b)</text>
-        <rect x="290" y="30" width="130" height="30" fill="#1a1a2e" stroke="#60a5fa"/><text x="355" y="50" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">Page Offset (12b)</text>
-        <text x="220" y="78" text-anchor="middle" fill="#8888a8" font-size="9">39-bit Virtual Address</text>
+        <rect x="20"  y="30" width="90"  height="30" fill="#1c3d64" stroke="#f4c44d"/><text x="65"  y="50" text-anchor="middle" fill="#f4c44d" font-size="10" font-family="JetBrains Mono">VPN[2] (9b)</text>
+        <rect x="110" y="30" width="90"  height="30" fill="#1c3d64" stroke="#f4c44d"/><text x="155" y="50" text-anchor="middle" fill="#f4c44d" font-size="10" font-family="JetBrains Mono">VPN[1] (9b)</text>
+        <rect x="200" y="30" width="90"  height="30" fill="#1c3d64" stroke="#f4c44d"/><text x="245" y="50" text-anchor="middle" fill="#f4c44d" font-size="10" font-family="JetBrains Mono">VPN[0] (9b)</text>
+        <rect x="290" y="30" width="130" height="30" fill="#1c3d64" stroke="#a5dcfe"/><text x="355" y="50" text-anchor="middle" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">Page Offset (12b)</text>
+        <text x="220" y="78" text-anchor="middle" fill="#8eaac7" font-size="9">39-bit Virtual Address</text>
 
         <!-- satp -->
-        <rect x="20" y="100" width="90" height="32" fill="#1a1a2e" stroke="#a78bfa"/>
-        <text x="65" y="120" text-anchor="middle" fill="#a78bfa" font-size="11" font-family="JetBrains Mono">satp.PPN</text>
-        <text x="65" y="148" text-anchor="middle" fill="#8888a8" font-size="8">root page-table</text>
+        <rect x="20" y="100" width="90" height="32" fill="#1c3d64" stroke="#c7b9fe"/>
+        <text x="65" y="120" text-anchor="middle" fill="#c7b9fe" font-size="11" font-family="JetBrains Mono">satp.PPN</text>
+        <text x="65" y="148" text-anchor="middle" fill="#8eaac7" font-size="8">root page-table</text>
 
         <!-- L2 PT -->
-        <rect x="130" y="100" width="80" height="110" fill="#1a1a2e" stroke="#4ecb8d"/>
-        <text x="170" y="120" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">L2 PT</text>
-        <line x1="135" y1="140" x2="205" y2="140" stroke="#2a2a3a"/>
-        <text x="170" y="160" text-anchor="middle" fill="#8888a8" font-size="7">PTE</text>
-        <line x1="135" y1="170" x2="205" y2="170" stroke="#2a2a3a"/>
-        <text x="170" y="190" text-anchor="middle" fill="#8888a8" font-size="7">... 512 PTEs</text>
+        <rect x="130" y="100" width="80" height="110" fill="#1c3d64" stroke="#87d5bb"/>
+        <text x="170" y="120" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">L2 PT</text>
+        <line x1="135" y1="140" x2="205" y2="140" stroke="#305782"/>
+        <text x="170" y="160" text-anchor="middle" fill="#8eaac7" font-size="7">PTE</text>
+        <line x1="135" y1="170" x2="205" y2="170" stroke="#305782"/>
+        <text x="170" y="190" text-anchor="middle" fill="#8eaac7" font-size="7">... 512 PTEs</text>
 
         <!-- L1 PT -->
-        <rect x="230" y="100" width="80" height="110" fill="#1a1a2e" stroke="#4ecb8d"/>
-        <text x="270" y="120" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">L1 PT</text>
+        <rect x="230" y="100" width="80" height="110" fill="#1c3d64" stroke="#87d5bb"/>
+        <text x="270" y="120" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">L1 PT</text>
 
         <!-- L0 PT -->
-        <rect x="330" y="100" width="80" height="110" fill="#1a1a2e" stroke="#4ecb8d"/>
-        <text x="370" y="120" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">L0 PT</text>
+        <rect x="330" y="100" width="80" height="110" fill="#1c3d64" stroke="#87d5bb"/>
+        <text x="370" y="120" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">L0 PT</text>
 
         <!-- Physical -->
-        <rect x="430" y="100" width="80" height="110" fill="#1a1a2e" stroke="#f5a623"/>
-        <text x="470" y="120" text-anchor="middle" fill="#f5a623" font-size="10" font-family="JetBrains Mono">4 KiB page</text>
-        <text x="470" y="160" text-anchor="middle" fill="#8888a8" font-size="8">Physical</text>
-        <text x="470" y="175" text-anchor="middle" fill="#8888a8" font-size="8">Memory</text>
+        <rect x="430" y="100" width="80" height="110" fill="#1c3d64" stroke="#f4c44d"/>
+        <text x="470" y="120" text-anchor="middle" fill="#f4c44d" font-size="10" font-family="JetBrains Mono">4 KiB page</text>
+        <text x="470" y="160" text-anchor="middle" fill="#8eaac7" font-size="8">Physical</text>
+        <text x="470" y="175" text-anchor="middle" fill="#8eaac7" font-size="8">Memory</text>
 
         <!-- Arrows -->
-        <line x1="110" y1="116" x2="130" y2="130" stroke="#8888a8" marker-end="url(#arr)"/>
-        <line x1="210" y1="145" x2="230" y2="145" stroke="#8888a8" marker-end="url(#arr)"/>
-        <line x1="310" y1="155" x2="330" y2="155" stroke="#8888a8" marker-end="url(#arr)"/>
-        <line x1="410" y1="155" x2="430" y2="155" stroke="#8888a8" marker-end="url(#arr)"/>
+        <line x1="110" y1="116" x2="130" y2="130" stroke="#8eaac7" marker-end="url(#arr)"/>
+        <line x1="210" y1="145" x2="230" y2="145" stroke="#8eaac7" marker-end="url(#arr)"/>
+        <line x1="310" y1="155" x2="330" y2="155" stroke="#8eaac7" marker-end="url(#arr)"/>
+        <line x1="410" y1="155" x2="430" y2="155" stroke="#8eaac7" marker-end="url(#arr)"/>
 
         <!-- Merge offset -->
-        <text x="260" y="242" text-anchor="middle" fill="#8888a8" font-size="9" font-family="JetBrains Mono">
+        <text x="260" y="242" text-anchor="middle" fill="#8eaac7" font-size="9" font-family="JetBrains Mono">
           PA = (PTE.PPN &lt;&lt; 12) | offset
         </text>
 
         <!-- Superpages -->
-        <text x="20"  y="275" fill="#f5a623" font-size="10" font-family="JetBrains Mono" font-weight="700">Superpages:</text>
-        <text x="100" y="275" fill="#e8e8f0" font-size="10" font-family="JetBrains Mono">4 KiB · 2 MiB · 1 GiB</text>
-        <text x="20"  y="292" fill="#f5a623" font-size="10" font-family="JetBrains Mono" font-weight="700">PTE bits:</text>
-        <text x="100" y="292" fill="#e8e8f0" font-size="10" font-family="JetBrains Mono">V · R · W · X · U · G · A · D</text>
+        <text x="20"  y="275" fill="#f4c44d" font-size="10" font-family="JetBrains Mono" font-weight="700">Superpages:</text>
+        <text x="100" y="275" fill="#ecf1f7" font-size="10" font-family="JetBrains Mono">4 KiB · 2 MiB · 1 GiB</text>
+        <text x="20"  y="292" fill="#f4c44d" font-size="10" font-family="JetBrains Mono" font-weight="700">PTE bits:</text>
+        <text x="100" y="292" fill="#ecf1f7" font-size="10" font-family="JetBrains Mono">V · R · W · X · U · G · A · D</text>
       </svg>
     </div>
     <div>
@@ -1197,18 +1197,18 @@
     <div>
       <svg class="diagram" viewBox="0 0 500 340" width="500" height="340">
         <!-- Running code -->
-        <rect x="30" y="20" width="180" height="40" rx="4" fill="#1a1a2e" stroke="#4ecb8d"/>
-        <text x="120" y="45" text-anchor="middle" fill="#4ecb8d" font-size="11" font-family="JetBrains Mono">User / S-mode code</text>
+        <rect x="30" y="20" width="180" height="40" rx="4" fill="#1c3d64" stroke="#87d5bb"/>
+        <text x="120" y="45" text-anchor="middle" fill="#87d5bb" font-size="11" font-family="JetBrains Mono">User / S-mode code</text>
 
         <!-- Trap edge -->
-        <path d="M 120 60 Q 120 100 250 100" fill="none" stroke="#f87171" stroke-width="1.6" marker-end="url(#arr)"/>
-        <text x="205" y="85" fill="#f87171" font-size="9" font-family="JetBrains Mono">trap!</text>
+        <path d="M 120 60 Q 120 100 250 100" fill="none" stroke="#fd8c79" stroke-width="1.6" marker-end="url(#arr)"/>
+        <text x="205" y="85" fill="#fd8c79" font-size="9" font-family="JetBrains Mono">trap!</text>
 
         <!-- Trap causes -->
-        <rect x="260" y="20" width="220" height="170" rx="4" fill="#10101a" stroke="#f5a623"/>
-        <text x="370" y="40" text-anchor="middle" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">Causes (mcause)</text>
-        <g font-family="JetBrains Mono" font-size="9" fill="#e8e8f0">
-          <text x="275" y="60"  fill="#f87171">Sync exceptions:</text>
+        <rect x="260" y="20" width="220" height="170" rx="4" fill="#143154" stroke="#f4c44d"/>
+        <text x="370" y="40" text-anchor="middle" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">Causes (mcause)</text>
+        <g font-family="JetBrains Mono" font-size="9" fill="#ecf1f7">
+          <text x="275" y="60"  fill="#fd8c79">Sync exceptions:</text>
           <text x="285" y="74">0  Instruction misaligned</text>
           <text x="285" y="86">2  Illegal instruction</text>
           <text x="285" y="98">3  Breakpoint</text>
@@ -1218,13 +1218,13 @@
           <text x="285" y="146">9  ECall from S</text>
           <text x="285" y="158">12 Instr page fault</text>
           <text x="285" y="170">13/15 Load/Store page fault</text>
-          <text x="275" y="186" fill="#60a5fa">+ Async: SI/TI/EI per mode</text>
+          <text x="275" y="186" fill="#a5dcfe">+ Async: SI/TI/EI per mode</text>
         </g>
 
         <!-- HW saves -->
-        <rect x="30" y="130" width="180" height="85" rx="4" fill="#1a1a2e" stroke="#a78bfa"/>
-        <text x="120" y="148" text-anchor="middle" fill="#a78bfa" font-size="11" font-family="JetBrains Mono" font-weight="700">HW automatic</text>
-        <g font-family="JetBrains Mono" font-size="9" fill="#8888a8">
+        <rect x="30" y="130" width="180" height="85" rx="4" fill="#1c3d64" stroke="#c7b9fe"/>
+        <text x="120" y="148" text-anchor="middle" fill="#c7b9fe" font-size="11" font-family="JetBrains Mono" font-weight="700">HW automatic</text>
+        <g font-family="JetBrains Mono" font-size="9" fill="#8eaac7">
           <text x="40" y="165">• pc → mepc</text>
           <text x="40" y="178">• cause → mcause</text>
           <text x="40" y="191">• trap val → mtval</text>
@@ -1232,16 +1232,16 @@
         </g>
 
         <!-- Trap handler -->
-        <rect x="30" y="240" width="440" height="50" rx="4" fill="#1a1a2e" stroke="#60a5fa" stroke-width="1.8"/>
-        <text x="250" y="260" text-anchor="middle" fill="#60a5fa" font-size="12" font-family="JetBrains Mono" font-weight="700">pc ← mtvec (vectored or direct)</text>
-        <text x="250" y="278" text-anchor="middle" fill="#8888a8" font-size="9">SW saves caller-saved regs, demux on mcause, handle, then MRET</text>
+        <rect x="30" y="240" width="440" height="50" rx="4" fill="#1c3d64" stroke="#a5dcfe" stroke-width="1.8"/>
+        <text x="250" y="260" text-anchor="middle" fill="#a5dcfe" font-size="12" font-family="JetBrains Mono" font-weight="700">pc ← mtvec (vectored or direct)</text>
+        <text x="250" y="278" text-anchor="middle" fill="#8eaac7" font-size="9">SW saves caller-saved regs, demux on mcause, handle, then MRET</text>
 
-        <line x1="120" y1="215" x2="180" y2="240" stroke="#a78bfa" marker-end="url(#arr)"/>
-        <line x1="370" y1="190" x2="340" y2="240" stroke="#f5a623" marker-end="url(#arr)"/>
+        <line x1="120" y1="215" x2="180" y2="240" stroke="#c7b9fe" marker-end="url(#arr)"/>
+        <line x1="370" y1="190" x2="340" y2="240" stroke="#f4c44d" marker-end="url(#arr)"/>
 
         <!-- MRET back -->
-        <path d="M 400 290 Q 470 200 220 40" fill="none" stroke="#4ecb8d" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arr)"/>
-        <text x="450" y="160" fill="#4ecb8d" font-size="9" font-family="JetBrains Mono">MRET</text>
+        <path d="M 400 290 Q 470 200 220 40" fill="none" stroke="#87d5bb" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+        <text x="450" y="160" fill="#87d5bb" font-size="9" font-family="JetBrains Mono">MRET</text>
       </svg>
     </div>
     <div>
@@ -1358,32 +1358,32 @@ ret</code></pre>
     <div>
       <svg class="diagram" viewBox="0 0 560 260" width="560" height="260">
         <!-- 32-bit form -->
-        <text x="10" y="20" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">32-bit: ADDI sp, sp, -16</text>
+        <text x="10" y="20" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">32-bit: ADDI sp, sp, -16</text>
         <g transform="translate(10,30)">
-          <rect x="0"   y="0" width="220" height="26" fill="#1a1a2e" stroke="#a78bfa"/><text x="110" y="17" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">imm[11:0] = -16</text>
-          <rect x="220" y="0" width="50"  height="26" fill="#1a1a2e" stroke="#4ecb8d"/><text x="245" y="17" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">x2</text>
-          <rect x="270" y="0" width="50"  height="26" fill="#1a1a2e" stroke="#60a5fa"/><text x="295" y="17" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">000</text>
-          <rect x="320" y="0" width="60"  height="26" fill="#1a1a2e" stroke="#4ecb8d"/><text x="350" y="17" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">x2</text>
-          <rect x="380" y="0" width="110" height="26" fill="#1a1a2e" stroke="#a78bfa"/><text x="435" y="17" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">OP-IMM</text>
+          <rect x="0"   y="0" width="220" height="26" fill="#1c3d64" stroke="#c7b9fe"/><text x="110" y="17" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">imm[11:0] = -16</text>
+          <rect x="220" y="0" width="50"  height="26" fill="#1c3d64" stroke="#87d5bb"/><text x="245" y="17" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">x2</text>
+          <rect x="270" y="0" width="50"  height="26" fill="#1c3d64" stroke="#a5dcfe"/><text x="295" y="17" text-anchor="middle" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">000</text>
+          <rect x="320" y="0" width="60"  height="26" fill="#1c3d64" stroke="#87d5bb"/><text x="350" y="17" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">x2</text>
+          <rect x="380" y="0" width="110" height="26" fill="#1c3d64" stroke="#c7b9fe"/><text x="435" y="17" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">OP-IMM</text>
         </g>
 
-        <text x="10" y="90" fill="#4ecb8d" font-size="11" font-family="JetBrains Mono" font-weight="700">16-bit: C.ADDI16SP sp, -16</text>
+        <text x="10" y="90" fill="#87d5bb" font-size="11" font-family="JetBrains Mono" font-weight="700">16-bit: C.ADDI16SP sp, -16</text>
         <g transform="translate(10,100)">
-          <rect x="0"   y="0" width="45"  height="26" fill="#1a1a2e" stroke="#4ecb8d"/><text x="22"  y="17" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">011</text>
-          <rect x="45"  y="0" width="30"  height="26" fill="#1a1a2e" stroke="#a78bfa"/><text x="60"  y="17" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">nzi5</text>
-          <rect x="75"  y="0" width="50"  height="26" fill="#1a1a2e" stroke="#4ecb8d"/><text x="100" y="17" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">x2</text>
-          <rect x="125" y="0" width="120" height="26" fill="#1a1a2e" stroke="#a78bfa"/><text x="185" y="17" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">nzi[4,6,8:7,5]</text>
-          <rect x="245" y="0" width="40"  height="26" fill="#1a1a2e" stroke="#60a5fa"/><text x="265" y="17" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">01</text>
+          <rect x="0"   y="0" width="45"  height="26" fill="#1c3d64" stroke="#87d5bb"/><text x="22"  y="17" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">011</text>
+          <rect x="45"  y="0" width="30"  height="26" fill="#1c3d64" stroke="#c7b9fe"/><text x="60"  y="17" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">nzi5</text>
+          <rect x="75"  y="0" width="50"  height="26" fill="#1c3d64" stroke="#87d5bb"/><text x="100" y="17" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">x2</text>
+          <rect x="125" y="0" width="120" height="26" fill="#1c3d64" stroke="#c7b9fe"/><text x="185" y="17" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">nzi[4,6,8:7,5]</text>
+          <rect x="245" y="0" width="40"  height="26" fill="#1c3d64" stroke="#a5dcfe"/><text x="265" y="17" text-anchor="middle" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">01</text>
         </g>
 
         <!-- Stats -->
         <g transform="translate(10, 160)">
-          <text x="0" y="0" fill="#f5a623" font-size="11" font-family="DM Sans" font-weight="700">Typical code-size reduction: <tspan fill="#4ecb8d">25-30%</tspan></text>
-          <text x="0" y="18" fill="#8888a8" font-size="10" font-family="DM Sans">• Reuses the most common register subset <tspan fill="#a78bfa" font-family="JetBrains Mono">x8-x15</tspan> with a 3-bit field</text>
-          <text x="0" y="34" fill="#8888a8" font-size="10" font-family="DM Sans">• 16-bit and 32-bit mix freely on 2-byte alignment (bits [1:0] = 11 → 32-bit, else 16-bit)</text>
-          <text x="0" y="50" fill="#8888a8" font-size="10" font-family="DM Sans">• Decoder expands each C-form to its 32-bit base instruction — zero semantic difference</text>
-          <text x="0" y="66" fill="#8888a8" font-size="10" font-family="DM Sans">• <tspan fill="#4ecb8d" font-family="JetBrains Mono">Zca/Zcf/Zcd</tspan> — sub-extensions for fine-grained inclusion</text>
-          <text x="0" y="82" fill="#8888a8" font-size="10" font-family="DM Sans">• <tspan fill="#4ecb8d" font-family="JetBrains Mono">Zcb / Zcmp / Zcmt</tspan> — "C extension extras" for further MCU code density</text>
+          <text x="0" y="0" fill="#f4c44d" font-size="11" font-family="DM Sans" font-weight="700">Typical code-size reduction: <tspan fill="#87d5bb">25-30%</tspan></text>
+          <text x="0" y="18" fill="#8eaac7" font-size="10" font-family="DM Sans">• Reuses the most common register subset <tspan fill="#c7b9fe" font-family="JetBrains Mono">x8-x15</tspan> with a 3-bit field</text>
+          <text x="0" y="34" fill="#8eaac7" font-size="10" font-family="DM Sans">• 16-bit and 32-bit mix freely on 2-byte alignment (bits [1:0] = 11 → 32-bit, else 16-bit)</text>
+          <text x="0" y="50" fill="#8eaac7" font-size="10" font-family="DM Sans">• Decoder expands each C-form to its 32-bit base instruction — zero semantic difference</text>
+          <text x="0" y="66" fill="#8eaac7" font-size="10" font-family="DM Sans">• <tspan fill="#87d5bb" font-family="JetBrains Mono">Zca/Zcf/Zcd</tspan> — sub-extensions for fine-grained inclusion</text>
+          <text x="0" y="82" fill="#8eaac7" font-size="10" font-family="DM Sans">• <tspan fill="#87d5bb" font-family="JetBrains Mono">Zcb / Zcmp / Zcmt</tspan> — "C extension extras" for further MCU code density</text>
         </g>
       </svg>
     </div>
@@ -1460,43 +1460,43 @@ aes64es   a0, a0, a2</code></pre>
     <div>
       <svg class="diagram" viewBox="0 0 510 260" width="510" height="260">
         <!-- Registers -->
-        <text x="255" y="14" text-anchor="middle" fill="#f5a623" font-size="11" font-family="JetBrains Mono" font-weight="700">v0–v31 · VLEN bits wide</text>
+        <text x="255" y="14" text-anchor="middle" fill="#f4c44d" font-size="11" font-family="JetBrains Mono" font-weight="700">v0–v31 · VLEN bits wide</text>
 
         <!-- Single vreg broken into groups -->
-        <rect x="20" y="30" width="470" height="36" fill="#1a1a2e" stroke="#4ecb8d"/>
-        <g font-family="JetBrains Mono" font-size="9" fill="#8888a8">
-          <text x="30" y="50" fill="#4ecb8d">SEW=8</text>
-          <line x1="70" y1="30" x2="70" y2="66" stroke="#2a2a3a"/>
-          <line x1="95" y1="30" x2="95" y2="66" stroke="#2a2a3a"/>
-          <line x1="120" y1="30" x2="120" y2="66" stroke="#2a2a3a"/>
-          <line x1="145" y1="30" x2="145" y2="66" stroke="#2a2a3a"/>
+        <rect x="20" y="30" width="470" height="36" fill="#1c3d64" stroke="#87d5bb"/>
+        <g font-family="JetBrains Mono" font-size="9" fill="#8eaac7">
+          <text x="30" y="50" fill="#87d5bb">SEW=8</text>
+          <line x1="70" y1="30" x2="70" y2="66" stroke="#305782"/>
+          <line x1="95" y1="30" x2="95" y2="66" stroke="#305782"/>
+          <line x1="120" y1="30" x2="120" y2="66" stroke="#305782"/>
+          <line x1="145" y1="30" x2="145" y2="66" stroke="#305782"/>
           <!-- etc. -->
-          <text x="60" y="60" fill="#e8e8f0">e0</text>
-          <text x="85" y="60" fill="#e8e8f0">e1</text>
-          <text x="110" y="60" fill="#e8e8f0">e2</text>
-          <text x="135" y="60" fill="#e8e8f0">…</text>
-          <text x="260" y="60" fill="#e8e8f0" text-anchor="middle">VL elements of SEW bits</text>
+          <text x="60" y="60" fill="#ecf1f7">e0</text>
+          <text x="85" y="60" fill="#ecf1f7">e1</text>
+          <text x="110" y="60" fill="#ecf1f7">e2</text>
+          <text x="135" y="60" fill="#ecf1f7">…</text>
+          <text x="260" y="60" fill="#ecf1f7" text-anchor="middle">VL elements of SEW bits</text>
         </g>
 
-        <rect x="20" y="80" width="470" height="36" fill="#1a1a2e" stroke="#a78bfa"/>
-        <text x="30" y="100" fill="#a78bfa" font-size="9" font-family="JetBrains Mono">SEW=32</text>
-        <text x="260" y="102" text-anchor="middle" fill="#e8e8f0" font-size="9" font-family="JetBrains Mono">fewer, wider lanes</text>
+        <rect x="20" y="80" width="470" height="36" fill="#1c3d64" stroke="#c7b9fe"/>
+        <text x="30" y="100" fill="#c7b9fe" font-size="9" font-family="JetBrains Mono">SEW=32</text>
+        <text x="260" y="102" text-anchor="middle" fill="#ecf1f7" font-size="9" font-family="JetBrains Mono">fewer, wider lanes</text>
 
         <!-- LMUL visualization -->
-        <text x="20" y="140" fill="#f5a623" font-size="11" font-family="JetBrains Mono">LMUL = 4 (group 4 vregs)</text>
-        <rect x="20"  y="150" width="115" height="24" fill="#1a1a2e" stroke="#f87171"/>
-        <rect x="140" y="150" width="115" height="24" fill="#1a1a2e" stroke="#f87171"/>
-        <rect x="260" y="150" width="115" height="24" fill="#1a1a2e" stroke="#f87171"/>
-        <rect x="380" y="150" width="115" height="24" fill="#1a1a2e" stroke="#f87171"/>
-        <text x="78"  y="166" text-anchor="middle" fill="#f87171" font-size="10" font-family="JetBrains Mono">v8</text>
-        <text x="198" y="166" text-anchor="middle" fill="#f87171" font-size="10" font-family="JetBrains Mono">v9</text>
-        <text x="318" y="166" text-anchor="middle" fill="#f87171" font-size="10" font-family="JetBrains Mono">v10</text>
-        <text x="438" y="166" text-anchor="middle" fill="#f87171" font-size="10" font-family="JetBrains Mono">v11</text>
-        <text x="255" y="192" text-anchor="middle" fill="#8888a8" font-size="9">viewed as one large vector → more throughput, fewer addressable regs</text>
+        <text x="20" y="140" fill="#f4c44d" font-size="11" font-family="JetBrains Mono">LMUL = 4 (group 4 vregs)</text>
+        <rect x="20"  y="150" width="115" height="24" fill="#1c3d64" stroke="#fd8c79"/>
+        <rect x="140" y="150" width="115" height="24" fill="#1c3d64" stroke="#fd8c79"/>
+        <rect x="260" y="150" width="115" height="24" fill="#1c3d64" stroke="#fd8c79"/>
+        <rect x="380" y="150" width="115" height="24" fill="#1c3d64" stroke="#fd8c79"/>
+        <text x="78"  y="166" text-anchor="middle" fill="#fd8c79" font-size="10" font-family="JetBrains Mono">v8</text>
+        <text x="198" y="166" text-anchor="middle" fill="#fd8c79" font-size="10" font-family="JetBrains Mono">v9</text>
+        <text x="318" y="166" text-anchor="middle" fill="#fd8c79" font-size="10" font-family="JetBrains Mono">v10</text>
+        <text x="438" y="166" text-anchor="middle" fill="#fd8c79" font-size="10" font-family="JetBrains Mono">v11</text>
+        <text x="255" y="192" text-anchor="middle" fill="#8eaac7" font-size="9">viewed as one large vector → more throughput, fewer addressable regs</text>
 
         <!-- Memory tuple -->
-        <text x="20" y="220" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">Segment load/store: vlseg2e32.v v4, (a0) → {v4,v5} strided by 2 elts</text>
-        <text x="20" y="240" fill="#60a5fa" font-size="10" font-family="JetBrains Mono">Indexed: vluxei32.v — gather; vsuxei32.v — scatter</text>
+        <text x="20" y="220" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">Segment load/store: vlseg2e32.v v4, (a0) → {v4,v5} strided by 2 elts</text>
+        <text x="20" y="240" fill="#a5dcfe" font-size="10" font-family="JetBrains Mono">Indexed: vluxei32.v — gather; vsuxei32.v — scatter</text>
       </svg>
     </div>
     <div>
@@ -1541,35 +1541,35 @@ aes64es   a0, a0, a2</code></pre>
     <div>
       <svg class="diagram" viewBox="0 0 580 280" width="580" height="280">
         <!-- Guest VM 1 -->
-        <rect x="20" y="20" width="240" height="110" rx="6" fill="#0f1018" stroke="#60a5fa"/>
-        <text x="140" y="40" text-anchor="middle" fill="#60a5fa" font-size="11" font-family="JetBrains Mono" font-weight="700">Guest VM #1</text>
-        <rect x="35" y="52" width="100" height="32" rx="4" fill="#1a1a2e" stroke="#a78bfa"/>
-        <text x="85" y="72" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">VU app</text>
-        <rect x="145" y="52" width="100" height="32" rx="4" fill="#1a1a2e" stroke="#4ecb8d"/>
-        <text x="195" y="72" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">VS kernel</text>
-        <text x="140" y="110" text-anchor="middle" fill="#8888a8" font-size="8" font-family="JetBrains Mono">Stage-1 VM page tables (vsatp)</text>
+        <rect x="20" y="20" width="240" height="110" rx="6" fill="#143154" stroke="#a5dcfe"/>
+        <text x="140" y="40" text-anchor="middle" fill="#a5dcfe" font-size="11" font-family="JetBrains Mono" font-weight="700">Guest VM #1</text>
+        <rect x="35" y="52" width="100" height="32" rx="4" fill="#1c3d64" stroke="#c7b9fe"/>
+        <text x="85" y="72" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">VU app</text>
+        <rect x="145" y="52" width="100" height="32" rx="4" fill="#1c3d64" stroke="#87d5bb"/>
+        <text x="195" y="72" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">VS kernel</text>
+        <text x="140" y="110" text-anchor="middle" fill="#8eaac7" font-size="8" font-family="JetBrains Mono">Stage-1 VM page tables (vsatp)</text>
 
-        <rect x="320" y="20" width="240" height="110" rx="6" fill="#0f1018" stroke="#60a5fa"/>
-        <text x="440" y="40" text-anchor="middle" fill="#60a5fa" font-size="11" font-family="JetBrains Mono" font-weight="700">Guest VM #2</text>
-        <rect x="335" y="52" width="100" height="32" rx="4" fill="#1a1a2e" stroke="#a78bfa"/>
-        <text x="385" y="72" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="JetBrains Mono">VU app</text>
-        <rect x="445" y="52" width="100" height="32" rx="4" fill="#1a1a2e" stroke="#4ecb8d"/>
-        <text x="495" y="72" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="JetBrains Mono">VS kernel</text>
-        <text x="440" y="110" text-anchor="middle" fill="#8888a8" font-size="8" font-family="JetBrains Mono">Stage-1 VM page tables (vsatp)</text>
+        <rect x="320" y="20" width="240" height="110" rx="6" fill="#143154" stroke="#a5dcfe"/>
+        <text x="440" y="40" text-anchor="middle" fill="#a5dcfe" font-size="11" font-family="JetBrains Mono" font-weight="700">Guest VM #2</text>
+        <rect x="335" y="52" width="100" height="32" rx="4" fill="#1c3d64" stroke="#c7b9fe"/>
+        <text x="385" y="72" text-anchor="middle" fill="#c7b9fe" font-size="10" font-family="JetBrains Mono">VU app</text>
+        <rect x="445" y="52" width="100" height="32" rx="4" fill="#1c3d64" stroke="#87d5bb"/>
+        <text x="495" y="72" text-anchor="middle" fill="#87d5bb" font-size="10" font-family="JetBrains Mono">VS kernel</text>
+        <text x="440" y="110" text-anchor="middle" fill="#8eaac7" font-size="8" font-family="JetBrains Mono">Stage-1 VM page tables (vsatp)</text>
 
         <!-- HS hypervisor -->
-        <rect x="20" y="150" width="540" height="60" rx="6" fill="#0f1018" stroke="#f5a623" stroke-width="1.6"/>
-        <text x="290" y="175" text-anchor="middle" fill="#f5a623" font-size="12" font-family="JetBrains Mono" font-weight="700">HS-mode Hypervisor — KVM, Xvisor, bao-hypervisor, seL4-hyp</text>
-        <text x="290" y="195" text-anchor="middle" fill="#8888a8" font-size="9">Stage-2 translation via hgatp · controls vCPU scheduling, virtual timer &amp; interrupts (AIA)</text>
+        <rect x="20" y="150" width="540" height="60" rx="6" fill="#143154" stroke="#f4c44d" stroke-width="1.6"/>
+        <text x="290" y="175" text-anchor="middle" fill="#f4c44d" font-size="12" font-family="JetBrains Mono" font-weight="700">HS-mode Hypervisor — KVM, Xvisor, bao-hypervisor, seL4-hyp</text>
+        <text x="290" y="195" text-anchor="middle" fill="#8eaac7" font-size="9">Stage-2 translation via hgatp · controls vCPU scheduling, virtual timer &amp; interrupts (AIA)</text>
 
         <!-- M firmware -->
-        <rect x="20" y="225" width="540" height="40" rx="6" fill="#0f1018" stroke="#f87171"/>
-        <text x="290" y="248" text-anchor="middle" fill="#f87171" font-size="11" font-family="JetBrains Mono" font-weight="700">M-mode firmware — OpenSBI / RustSBI · platform init, SBI calls</text>
+        <rect x="20" y="225" width="540" height="40" rx="6" fill="#143154" stroke="#fd8c79"/>
+        <text x="290" y="248" text-anchor="middle" fill="#fd8c79" font-size="11" font-family="JetBrains Mono" font-weight="700">M-mode firmware — OpenSBI / RustSBI · platform init, SBI calls</text>
 
         <!-- Arrows -->
-        <line x1="140" y1="130" x2="140" y2="150" stroke="#8888a8" marker-end="url(#arr)"/>
-        <line x1="440" y1="130" x2="440" y2="150" stroke="#8888a8" marker-end="url(#arr)"/>
-        <line x1="290" y1="210" x2="290" y2="225" stroke="#8888a8" marker-end="url(#arr)"/>
+        <line x1="140" y1="130" x2="140" y2="150" stroke="#8eaac7" marker-end="url(#arr)"/>
+        <line x1="440" y1="130" x2="440" y2="150" stroke="#8eaac7" marker-end="url(#arr)"/>
+        <line x1="290" y1="210" x2="290" y2="225" stroke="#8eaac7" marker-end="url(#arr)"/>
       </svg>
     </div>
     <div>
@@ -1633,7 +1633,7 @@ aes64es   a0, a0, a2</code></pre>
 <!-- ============================================================ -->
 <!--  SLIDE 22 — INTERACTIVE MINI CPU                             -->
 <!-- ============================================================ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#10294a">
   <div style="font-family:'JetBrains Mono',monospace; font-size:.5em; color:var(--muted); margin-bottom:.4em; letter-spacing:.1em;">Interactive Demo · Step the CPU</div>
   <div class="slide-hdr"><span class="tag">20</span><h2>Mini RISC-V Stepper — Fibonacci</h2></div>
   <p style="margin-bottom:0.4em; font-size:.7em">A minimal RV32I model. Click <span class="mono a">Step</span> to execute one instruction. Changed registers highlight in amber. The program computes <span class="mono g">fib(N)</span> in <span class="mono">a0</span> where <span class="mono">N</span> starts in <span class="mono">a1</span>.</p>
