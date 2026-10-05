@@ -36,7 +36,7 @@ Designed as interview preparation and self-study material for hardware and silic
 ## Technical details
 
 - **Framework:** [Reveal.js 4.6.1](https://revealjs.com) from CDN
-- **Fonts:** Playfair Display (headings), DM Sans (body), JetBrains Mono (code)
+- **Fonts:** Saira Semi Condensed (headings), Archivo (body), Share Tech Mono (code)
 - **Offline:** works after first load (fonts &amp; Reveal.js cached by the browser)
 - **Navigation:** `→` / `←` for slides, `Esc` for overview, `F` for fullscreen, `S` for speaker notes
 
